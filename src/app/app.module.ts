@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {SharedModule} from "./shared/shared.module";
+import {RouterModule} from "@angular/router";
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {SharedModule} from "./shared/shared.module";
+import {rootRouterConfig} from "./app.routing";
 
 @NgModule({
   declarations: [
@@ -12,9 +13,9 @@ import {SharedModule} from "./shared/shared.module";
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule,
+    RouterModule.forRoot(rootRouterConfig, {useHash: false, relativeLinkResolution: 'legacy'}),
   ],
   providers: [],
   bootstrap: [AppComponent]
