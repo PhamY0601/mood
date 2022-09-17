@@ -3,10 +3,16 @@ import { CommonModule } from '@angular/common';
 import { SharedMaterialModule } from "../shared-material.module";
 import { RouterModule } from "@angular/router";
 import { HomeComponent } from './layout/home/home.component';
+import { FooterComponent } from "./footer/footer.component";
+import { HeaderComponent } from "./header/header.component";
+import { AvatarComponent } from "./avatar/avatar.component";
 
 
 const components = [
-    HomeComponent
+    HomeComponent,
+    FooterComponent,
+    HeaderComponent,
+    AvatarComponent
 ];
 
 @NgModule({

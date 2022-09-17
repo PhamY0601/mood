@@ -8,6 +8,7 @@ import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatInputModule } from "@angular/material/input";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   exports: [
@@ -20,7 +21,7 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatInputModule,
     MatSidenavModule,
     MatToolbarModule,
-
+    FlexLayoutModule
   ]
 })
 export class SharedMaterialModule {}
