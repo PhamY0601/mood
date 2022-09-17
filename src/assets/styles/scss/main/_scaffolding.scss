@@ -1,0 +1,307 @@
+html {
+  font-size: 16px;
+}
+
+html,
+body {
+  width: 100%;
+  // height: 100%;
+  position: relative;
+  // overflow: hidden;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
+  // min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: $font-weight-base;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  font-family: $font-family-base;
+  background: #FCFDF6;;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  &[dir='rtl'],
+  &[dir='ltr'] {
+    unicode-bidi: embed;
+  }
+}
+
+bdo[dir='rtl'] {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+bdo[dir='ltr'] {
+  direction: ltr;
+  unicode-bidi: bidi-override;
+}
+
+
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  line-height: 1.1;
+  color: inherit;
+}
+
+.h1,
+h1 {
+  font-size: 2rem;
+}
+
+.h2,
+h2 {
+  font-size: 1.75rem;
+}
+
+.h3,
+h3 {
+  font-size: 1.5rem;
+}
+
+.h4,
+h4 {
+  font-size: 1.25rem;
+}
+
+.h5,
+h5 {
+  font-size: 1rem;
+}
+
+.h6,
+h6 {
+  font-size: 0.75rem !important;
+}
+
+/*---- Common -----*/
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.bg-none {
+  background: transparent !important;
+}
+
+.bg-white {
+  background: #ffffff !important;
+}
+
+.h-full {
+  height: 100vh;
+}
+.w-full {
+  width: 100vw;
+}
+.fix {
+  position: relative;
+  overflow: hidden;
+}
+
+.fix-elm::after {
+  display: table;
+  width: 100%;
+  content: '';
+}
+
+.mat-box-shadow {
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+
+}
+
+.light-gray {
+  background: rgba(0, 0, 0, 0.024);
+}
+
+.light-mat-gray {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.primary-color-blue {
+  color: #144E9D;
+}
+.primary-color-green {
+  color: #2AA755;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.font-light {
+  font-weight: 300 !important;
+}
+
+.font-normal {
+  font-weight: normal !important;
+}
+
+.fw-300 {
+  font-weight: 300 !important;
+}
+
+.fw-400 {
+  font-weight: 400 !important;
+}
+
+.fw-500 {
+  font-weight: 500 !important;
+}
+
+.fw-600 {
+  font-weight: 600 !important;
+}
+
+.fw-700 {
+  font-weight: 700 !important;
+}
+
+.fw-800 {
+  font-weight: 800 !important;
+}
+
+.fw-900 {
+  font-weight: 900 !important;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-gray {
+  color: #6E6E71;
+}
+
+.text-sm {
+  font-size: 0.813rem;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.w-70 {
+  width: 70% !important;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.text-small {
+  font-size: 0.813rem;
+}
+
+.text-small .mat-icon {
+  font-size: 1rem;
+  vertical-align: sub;
+  margin: 0 2px;
+}
+
+.primary-gradient-text {
+  background: linear-gradient(94.72deg, #144E9D 17.36%, #144E9D 20.88%, #04A44B 60.14%, #04A44B 60.2%, #04A44B 60.23%, #90D2C7 96.18%, #90D2C7 100.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.mat-stroked-button {
+  border-image: linear-gradient(94.72deg, #144E9D 17.36%, #144E9D 20.88%, #04A44B 60.14%, #04A44B 60.2%, #04A44B 60.23%, #90D2C7 96.18%, #90D2C7 100.81%) 1 !important;
+}
+
+.primary-gradient-background {
+  background: linear-gradient(100.48deg, #032654 6.68%, #077236 40.4%, #349282 86.51%);
+}
+
+.background-gradient {
+  background: linear-gradient(180deg, rgba(6, 34, 57, 0) 0%, #033915 100%);
+}
+.background-linear-gradient {
+  background: linear-gradient(180deg, #FCFDF6 0%, rgba(252, 253, 246, 0) 100%);;
+}
+
+.secondary-color-gold {
+  color: #E1C98C;
+}
+
+.title {
+  position: relative;
+  &-main {
+    position: relative;
+  }
+  &-sub {
+    font-size: 160px;
+
+  }
+}
+.position-ab{
+  position: absolute;
+}
+.position-re{
+  position: relative;
+}
+
+.btn-drag-scroll{
+  border-radius: 50px;
+  width: 128px;
+  height: 52px;
+  padding: 7px 20px;
+  &-1 {
+    border: 2px solid #FFFFFF;
+  }
+  &-2 {
+    border: 2px solid #2AA755;;
+  }
+}
+.text-underline {
+  text-decoration: underline;
+}
+.mat-drawer-content {
+  overflow: hidden !important;
+}
