@@ -7,6 +7,8 @@ import { CameraComponent } from "./camera/camera.component";
 import { CameraRoutes } from "./camera.routing";
 import { WebcamModule } from "ngx-webcam";
 import { MusicComponent } from "./music/music.component";
+import { AngMusicPlayerModule } from "ang-music-player";
+import {FormsModule} from "@angular/forms";
 
 
 @NgModule({
@@ -16,6 +18,8 @@ import { MusicComponent } from "./music/music.component";
         SharedModule,
         SharedMaterialModule,
         WebcamModule,
+        AngMusicPlayerModule,
+        FormsModule,
     ],
     declarations: [
         CameraComponent,

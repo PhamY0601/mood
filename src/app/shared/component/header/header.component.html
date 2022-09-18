@@ -1,6 +1,14 @@
 <div class="py-4 px-6 back-ground-blue mat-elevation-z1" fxLayout="row" fxLayoutAlign="space-between center">
     <div class="background-logo"></div>
-    <button mat-icon-button  class="topbar-button-right mr-16 img-button">
+    <button mat-icon-button [matMenuTriggerFor]="accountMenu"  class="topbar-button-right mr-16 img-button">
         <app-avatar [size]="48"></app-avatar>
     </button>
+    <mat-menu #accountMenu="matMenu">
+        <button mat-menu-item>
+            <span>Đăng nhập</span>
+        </button>
+        <button mat-menu-item>
+            <span>Đăng ký</span>
+        </button>
+    </mat-menu>
 </div>
