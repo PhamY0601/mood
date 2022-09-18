@@ -14,7 +14,7 @@ export class AvatarComponent implements OnInit {
   ngOnInit(): void {}
 
   get backgroundImage(): string {
-    const src = this.image || 'assets/images/sources/01.jpg';
+    const src = this.image || 'assets/icons/avatar.svg';
     return `url(${src})`;
   }
 }

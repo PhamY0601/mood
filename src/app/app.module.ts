@@ -9,9 +9,11 @@ import { rootRouterConfig } from "./app.routing";
 import { HttpClientModule } from "@angular/common/http";
 import {MatIconRegistry} from "@angular/material/icon";
 
+
 @NgModule({
   declarations: [
     AppComponent,
+
   ],
   imports: [
     BrowserModule,
