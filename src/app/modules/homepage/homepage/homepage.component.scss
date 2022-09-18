@@ -1,0 +1,45 @@
+:host ::ng-deep .mat-horizontal-stepper-header-container {
+  display: none;
+}
+
+.bad-card {
+  cursor: pointer;
+  outline: 3px solid #D35D6E;
+  background: #FFFFFF;
+  color: #D35D6E;
+}
+
+::ng-deep .bad-card:focus {
+ background:#D35D6E;
+  color: #FFFFFF;
+  }
+
+.good-card {
+  outline: 3px solid #5AA469;
+  background: #FFFFFF;
+  color: #5AA469;
+
+}
+
+::ng-deep .good-card:focus {
+  background: #5AA469;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.normal-card {
+  outline: 3px solid #ABD9FF;
+  background: #FFFFFF;
+  color: #ABD9FF;
+  cursor: pointer;
+}
+
+::ng-deep.normal-card:focus {
+  background: #ABD9FF;
+  span {
+    color: #FFFFFF;
+  }
+}
+.mat-card {
+  width: 200px;
+}

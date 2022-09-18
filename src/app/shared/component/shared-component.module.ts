@@ -6,13 +6,17 @@ import { HomeComponent } from './layout/home/home.component';
 import { FooterComponent } from "./footer/footer.component";
 import { HeaderComponent } from "./header/header.component";
 import { AvatarComponent } from "./avatar/avatar.component";
+import { SessionComponent } from "./layout/session/session.component";
+import { WelcomeComponent } from "./layout/welcome/welcome.component";
 
 
 const components = [
     HomeComponent,
     FooterComponent,
     HeaderComponent,
-    AvatarComponent
+    AvatarComponent,
+    SessionComponent,
+    WelcomeComponent
 ];
 
 @NgModule({

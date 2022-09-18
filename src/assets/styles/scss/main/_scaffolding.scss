@@ -162,11 +162,20 @@ h6 {
 .primary-color-blue {
   color: #144E9D;
 }
+.primary-background-blue {
+  background: #144E9D;
+}
+.color-blue {
+  color: #ABD9FF;
+}
 .back-ground-blue{
   background: #ECF2F9;
 }
 .text-center {
   text-align: center;
+}
+.text-left {
+  text-align: left;
 }
 
 .text-right {
@@ -233,53 +242,6 @@ h6 {
   width: 50% !important;
 }
 
-.text-small {
-  font-size: 0.813rem;
-}
-
-.text-small .mat-icon {
-  font-size: 1rem;
-  vertical-align: sub;
-  margin: 0 2px;
-}
-
-.primary-gradient-text {
-  background: linear-gradient(94.72deg, #144E9D 17.36%, #144E9D 20.88%, #04A44B 60.14%, #04A44B 60.2%, #04A44B 60.23%, #90D2C7 96.18%, #90D2C7 100.81%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-
-.mat-stroked-button {
-  border-image: linear-gradient(94.72deg, #144E9D 17.36%, #144E9D 20.88%, #04A44B 60.14%, #04A44B 60.2%, #04A44B 60.23%, #90D2C7 96.18%, #90D2C7 100.81%) 1 !important;
-}
-
-.primary-gradient-background {
-  background: linear-gradient(100.48deg, #032654 6.68%, #077236 40.4%, #349282 86.51%);
-}
-
-.background-gradient {
-  background: linear-gradient(180deg, rgba(6, 34, 57, 0) 0%, #033915 100%);
-}
-.background-linear-gradient {
-  background: linear-gradient(180deg, #FCFDF6 0%, rgba(252, 253, 246, 0) 100%);;
-}
-
-.secondary-color-gold {
-  color: #E1C98C;
-}
-
-.title {
-  position: relative;
-  &-main {
-    position: relative;
-  }
-  &-sub {
-    font-size: 160px;
-
-  }
-}
 .position-ab{
   position: absolute;
 }
@@ -287,21 +249,24 @@ h6 {
   position: relative;
 }
 
-.btn-drag-scroll{
-  border-radius: 50px;
-  width: 128px;
-  height: 52px;
-  padding: 7px 20px;
-  &-1 {
-    border: 2px solid #FFFFFF;
-  }
-  &-2 {
-    border: 2px solid #2AA755;;
-  }
+.logo {
+  background: url("../../../../assets/images/logos/02.png") no-repeat;
+  background-size: 500px 150px;
+  width: 500px;
+  height: 150px;
 }
-.text-underline {
-  text-decoration: underline;
+.img-cloud {
+  background-image: url('../../../../assets/images/sources/cloud.png');
+  background-repeat: no-repeat;
+  height: 212px;
+  background-size: 212px;
+  opacity: 0.4;
 }
-.mat-drawer-content {
-  overflow: hidden !important;
+.mat-stroked-button {
+  border-radius: 10px !important;
+  border: solid 1px #144E9D !important;
+  color: #144E9D !important;
+}
+.mat-stroked-button:hover {
+  background: #ABD9FF;
 }

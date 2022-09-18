@@ -1,1 +1,12 @@
-<p>camera works!</p>
+<div fxLayout="column" fxLayoutAlign="space-around center" >
+    <div id="app">
+        <div><video #video id="video" width="640" height="480" autoplay></video></div>
+        <div><button id="snap" (click)="capture()"> <mat-icon svgIcon="camera"></mat-icon></button></div>
+        <canvas #canvas id="canvas" width="640" height="480"></canvas>
+<!--        <ul>-->
+<!--            <li *ngFor="let c of captures">-->
+<!--                <img src="{{ c }}" height="50" />-->
+<!--            </li>-->
+<!--        </ul>-->
+    </div>
+</div>

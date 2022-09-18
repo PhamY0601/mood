@@ -9,6 +9,8 @@ import { MatInputModule } from "@angular/material/input";
 import { MatSidenavModule } from "@angular/material/sidenav";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { FlexLayoutModule } from "@angular/flex-layout";
+import {MatStepperModule} from "@angular/material/stepper";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   exports: [
@@ -21,7 +23,9 @@ import { FlexLayoutModule } from "@angular/flex-layout";
     MatInputModule,
     MatSidenavModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatStepperModule,
+    MatCardModule,
   ]
 })
 export class SharedMaterialModule {}

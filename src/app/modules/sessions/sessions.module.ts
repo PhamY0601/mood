@@ -1,23 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { SessionsRoutes } from './sessions.routing';
 import { RouterModule } from "@angular/router";
 import { SharedModule } from "../../shared/shared.module";
 import { SharedMaterialModule } from "../../shared/shared-material.module";
-import { CameraComponent } from "./camera/camera.component";
-import { CameraRoutes } from "./camera.routing";
-import { WebcamModule } from "ngx-webcam";
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule.forChild(CameraRoutes),
+        RouterModule.forChild(SessionsRoutes),
         SharedModule,
         SharedMaterialModule,
-        WebcamModule,
+
     ],
     declarations: [
-        CameraComponent
+        PageNotFoundComponent
     ]
 })
-export class CameraModule {
+export class SessionsModule {
 }
