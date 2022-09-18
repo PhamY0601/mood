@@ -1,10 +1,14 @@
 import { Routes } from '@angular/router';
 import { CameraComponent } from "./camera/camera.component";
+import {MusicComponent} from "./music/music.component";
 
 export const CameraRoutes: Routes = [
   {
     path: '',
     component: CameraComponent,
-    data: {title: 'Thông tin tài khoản', breadcrumb: 'Thông tin tài khoản'},
   },
+  {
+    path: 'listen-to-music',
+    component: MusicComponent
+  }
 ];

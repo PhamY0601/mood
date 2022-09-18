@@ -1,4 +1,5 @@
 import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
+import {Location} from '@angular/common';
 
 @Component({
     selector: 'app-camera',
@@ -16,7 +17,7 @@ export class CameraComponent implements OnInit {
 
     public captures: Array<any>;
 
-    public constructor() {
+    public constructor(private _location: Location) {
         this.captures = [];
     }
 
@@ -61,4 +62,8 @@ export class CameraComponent implements OnInit {
     showText() {
         this.isReadMore = true;
     }
+    backClicked() {
+        this._location.back();
+    }
+
 }

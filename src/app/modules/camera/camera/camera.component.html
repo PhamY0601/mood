@@ -1,16 +1,21 @@
 <div class="py-6" fxLayout="column" fxLayoutAlign="space-around center">
-    <div class="py-3" fxLayout="column">
         <p class="fw-500 fz-4 primary-color-blue">Hãy để MOOD chụp ảnh cho bạn <mat-icon svgIcon="love"></mat-icon></p>
-        <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="40px">
-            <button class="mt-6 red" mat-stroked-button [routerLink]="['/homepage']">Trở lại Trang chủ</button>
-            <button  *ngIf="btnStyle!=='btn-display'" class="mt-6 me-10 green" mat-stroked-button (click)="toggle()">Đồng ý
-                <mat-icon svgIcon="camera1"></mat-icon>
-            </button>
-        </div>
+
+    <div *ngIf="isReadMore" class="mt-3" fxLayout="column" fxLayoutAlign="center center" >
+        <p>MOOD xin gửi tặng bạn một bài hát</p>
+        <button class="greenr" mat-stroked-button [routerLink]="['./music']" >Click để lắng nghe
+            <mat-icon svgIcon="music"></mat-icon>
+        </button>
     </div>
     <div id="app" [ngClass]="[btnStyle]">
         <div [ngClass]="{'display-content': isReadMore}"><video #video id="video" width="640" height="480" ></video></div>
         <div><button id="snap" (click)="capture(); showText()"> <mat-icon svgIcon="camera"></mat-icon></button></div>
         <canvas class="mt-2" #canvas width="640" height="480"></canvas>
+    </div>
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="40px">
+        <button class="mt-6 red" mat-stroked-button (click)="backClicked()">Trở lại Trang chủ</button>
+        <button  *ngIf="btnStyle!=='btn-display'" class="mt-6 me-10 green" mat-stroked-button (click)="toggle()">Đồng ý
+            <mat-icon svgIcon="camera1"></mat-icon>
+        </button>
     </div>
 </div>
