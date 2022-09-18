@@ -12,6 +12,8 @@ export class IconService {
     { name: 'normal', fileName: 'normal.svg' },
     { name: 'cool', fileName: 'cool.svg' },
     { name: 'camera', fileName: 'camera.svg' },
+    { name: 'camera1', fileName: 'camera1.svg' },
+    { name: 'love', fileName: 'love.svg' },
   ]
   constructor(
     private matIconRegistry: MatIconRegistry,

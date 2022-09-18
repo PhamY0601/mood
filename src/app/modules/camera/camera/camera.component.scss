@@ -1,0 +1,29 @@
+.red{
+  border: 3px solid #D35D6E !important;
+  background: #FFFFFF;
+  color: #D35D6E !important;
+}
+.red:hover{
+  border: 3px solid #D35D6E !important;
+  color: #FFFFFF !important;
+  background: #D35D6E !important;
+}
+.green {
+  border: 3px solid #5AA469 !important;
+  background: #FFFFFF;
+  color: #5AA469 !important;
+}
+.green:hover{
+  border: 3px solid #5AA469 !important;
+  color: #FFFFFF !important;
+  background: #5AA469  !important;
+}
+.btn-hidden {
+  display: none;
+}
+.btn-display {
+  display: block;
+}
+.display-content{
+ display: none;
+}

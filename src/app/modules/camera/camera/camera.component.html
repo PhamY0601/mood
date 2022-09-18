@@ -1,12 +1,16 @@
-<div fxLayout="column" fxLayoutAlign="space-around center" >
-    <div id="app">
-        <div><video #video id="video" width="640" height="480" autoplay></video></div>
-        <div><button id="snap" (click)="capture()"> <mat-icon svgIcon="camera"></mat-icon></button></div>
-        <canvas #canvas id="canvas" width="640" height="480"></canvas>
-<!--        <ul>-->
-<!--            <li *ngFor="let c of captures">-->
-<!--                <img src="{{ c }}" height="50" />-->
-<!--            </li>-->
-<!--        </ul>-->
+<div class="py-6" fxLayout="column" fxLayoutAlign="space-around center">
+    <div class="py-3" fxLayout="column">
+        <p class="fw-500 fz-4 primary-color-blue">Hãy để MOOD chụp ảnh cho bạn <mat-icon svgIcon="love"></mat-icon></p>
+        <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap="40px">
+            <button class="mt-6 red" mat-stroked-button [routerLink]="['/homepage']">Trở lại Trang chủ</button>
+            <button  *ngIf="btnStyle!=='btn-display'" class="mt-6 me-10 green" mat-stroked-button (click)="toggle()">Đồng ý
+                <mat-icon svgIcon="camera1"></mat-icon>
+            </button>
+        </div>
+    </div>
+    <div id="app" [ngClass]="[btnStyle]">
+        <div [ngClass]="{'display-content': isReadMore}"><video #video id="video" width="640" height="480" ></video></div>
+        <div><button id="snap" (click)="capture(); showText()"> <mat-icon svgIcon="camera"></mat-icon></button></div>
+        <canvas class="mt-2" #canvas width="640" height="480"></canvas>
     </div>
 </div>

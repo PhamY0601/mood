@@ -34,16 +34,18 @@
             </div>
         </mat-step>
         <mat-step>
-            <h2 class="fw-500 fz-6 primary-color-blue">Bạn có muốn cùng Mood trải nghiệm?</h2>
+            <h2 class="fw-500 fz-6 primary-color-blue">Bạn có muốn cùng MOOD trải nghiệm?</h2>
             <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px">
                 <mat-card style="width: 320px; height: 411px; outline: solid 3px #144E9D">
                     <img class="mt-2" mat-card-image src="../../../../../assets/images/sources/music.png">
                     <mat-card-content>
                         <p class="fw-600 fz-2 primary-color-blue">Thử một chút giai điệu</p>
+                        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2px">
                             <p>Tâm trạng bạn như thế nào vậy?</p>
                             <p>Hãy cho MOOD biết để gửi bạn tặng bạn bài hát.</p>
                             <p>Hãy nghỉ ngơi và lắng nghe.</p>
-                        <button mat-raised-button class="primary-background-blue full-width text-white"
+                        </div>
+                        <button mat-raised-button class="primary-background-blue full-width text-white mt-3"
                                 [routerLink]="['/camera']">Thử ngay
                         </button>
                     </mat-card-content>
@@ -51,14 +53,11 @@
                 <mat-card style="width: 320px; height: 411px; outline: solid 3px #144E9D">
                     <img class="mt-2" mat-card-image src="../../../../../assets/images/sources/lucky-spin.png">
                     <mat-card-content>
-                        <p class="fw-600 fz-2 primary-color-blue">Thử một chút may mắn</p>
-                        <p>
-                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
-                            Japan.
-                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
-                            originally
-                            bred for hunting.
-                        </p>
+                        <p class="fw-600 fz-2 primary-color-blue">Thử một chút thử thách</p>
+                        <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2px">
+                        <p>Bạn có thể dành ra 5 phút cùng MOOD thư giãn không?</p>
+                        <p>Hãy thử một chút thử thách, xoay vòng tròn và làm một vài điều đơn giản nhé! </p>
+                        </div>
                         <button mat-raised-button class="primary-background-blue full-width text-white">Thử ngay
                         </button>
                     </mat-card-content>
