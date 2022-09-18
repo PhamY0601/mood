@@ -1,0 +1,75 @@
+<div class="py-4" fxLayout="column" fxLayoutAlign="center center">
+    <span fxFlex="40px"></span>
+    <mat-stepper class="pt-6" #stepper class="full-width text-center">
+        <mat-step>
+            <h2 class="fw-500 fz-6 primary-color-blue">Ngày hôm nay của bạn như thế nào?</h2>
+            <div class="px-10 mt-6" fxLayout="column" fxLayoutAlign="center">
+                <div fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px">
+                    <mat-card class="normal-card" #commentCard1 tabindex="0">
+                        <span class="fw-500 fz-2">Bình thường</span>
+                        <div class="mt-2">
+                            <mat-icon svgIcon="normal"></mat-icon>
+                        </div>
+                    </mat-card>
+                    <mat-card class="good-card" #commentCard2 tabindex="-1">
+                        <span class="fw-500 fz-2">Tốt</span>
+                        <div class="mt-2">
+                            <mat-icon svgIcon="smile"></mat-icon>
+                        </div>
+                    </mat-card>
+                    <mat-card class="bad-card" #commentCard3 tabindex="0">
+                        <span class="fw-500 fz-2">Không ổn lắm</span>
+                        <div class="mt-2">
+                            <mat-icon svgIcon="bad"></mat-icon>
+                        </div>
+                    </mat-card>
+                </div>
+                <div fxLayout="row" fxLayoutAlign="center center">
+                    <span fxFlex="30"></span>
+                    <span fxFlex="30"></span>
+                    <button class="mt-6 me-10" mat-stroked-button matStepperNext>Next
+                        <mat-icon svgIcon="cool"></mat-icon>
+                    </button>
+                </div>
+            </div>
+        </mat-step>
+        <mat-step>
+            <h2 class="fw-500 fz-6 primary-color-blue">Bạn có muốn cùng Mood trải nghiệm?</h2>
+            <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px">
+                <mat-card style="width: 320px; height: 411px; outline: solid 3px #144E9D">
+                    <img class="mt-2" mat-card-image src="../../../../../assets/images/sources/music.png">
+                    <mat-card-content>
+                        <p class="fw-600 fz-2 primary-color-blue">Thử một chút giai điệu</p>
+                            <p>Tâm trạng bạn như thế nào vậy?</p>
+                            <p>Hãy cho MOOD biết để gửi bạn tặng bạn bài hát.</p>
+                            <p>Hãy nghỉ ngơi và lắng nghe.</p>
+                        <button mat-raised-button class="primary-background-blue full-width text-white"
+                                [routerLink]="['/camera']">Thử ngay
+                        </button>
+                    </mat-card-content>
+                </mat-card>
+                <mat-card style="width: 320px; height: 411px; outline: solid 3px #144E9D">
+                    <img class="mt-2" mat-card-image src="../../../../../assets/images/sources/lucky-spin.png">
+                    <mat-card-content>
+                        <p class="fw-600 fz-2 primary-color-blue">Thử một chút may mắn</p>
+                        <p>
+                            The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from
+                            Japan.
+                            A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was
+                            originally
+                            bred for hunting.
+                        </p>
+                        <button mat-raised-button class="primary-background-blue full-width text-white">Thử ngay
+                        </button>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <span fxFlex="30"></span>
+                <span fxFlex="30"></span>
+                <button class="mt-6 me-10" mat-stroked-button matStepperPrevious>Trở lại</button>
+            </div>
+        </mat-step>
+
+    </mat-stepper>
+</div>
